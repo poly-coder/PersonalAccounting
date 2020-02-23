@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "PolyCoder.PersonalAccounting.Domain", "PolyCoder.PersonalAccounting.Domain\PolyCoder.PersonalAccounting.Domain.fsproj", "{AF890AFE-0C18-49C8-8DFB-1DCC29836790}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "PolyCoder.PersonalAccounting.Domain", "PolyCoder.PersonalAccounting.Domain\PolyCoder.PersonalAccounting.Domain.fsproj", "{AF890AFE-0C18-49C8-8DFB-1DCC29836790}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "PolyCoder.PersonalAccounting.WebApi", "PolyCoder.PersonalAccounting.WebApi\PolyCoder.PersonalAccounting.WebApi.fsproj", "{AEBA146E-CAC9-4351-9D79-236A6D447A8A}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "PolyCoder.PersonalAccounting.WebApi", "PolyCoder.PersonalAccounting.WebApi\PolyCoder.PersonalAccounting.WebApi.fsproj", "{AEBA146E-CAC9-4351-9D79-236A6D447A8A}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "PolyCoder.PersonalAccounting.AzureServices", "PolyCoder.PersonalAccounting.AzureServices\PolyCoder.PersonalAccounting.AzureServices.fsproj", "{E09458F1-8AB5-413A-B229-2CDA6F7D51AA}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "PolyCoder.PersonalAccounting.AzureServices", "PolyCoder.PersonalAccounting.AzureServices\PolyCoder.PersonalAccounting.AzureServices.fsproj", "{E09458F1-8AB5-413A-B229-2CDA6F7D51AA}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "PolyCoder.PersonalAccounting.GrainInterfaces", "PolyCoder.PersonalAccounting.GrainInterfaces\PolyCoder.PersonalAccounting.GrainInterfaces.fsproj", "{78EF324D-6142-4796-BE0E-136F7BBF5755}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "PolyCoder.PersonalAccounting.GrainInterfaces", "PolyCoder.PersonalAccounting.GrainInterfaces\PolyCoder.PersonalAccounting.GrainInterfaces.fsproj", "{78EF324D-6142-4796-BE0E-136F7BBF5755}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "PolyCoder.PersonalAccounting.Grains", "PolyCoder.PersonalAccounting.Grains\PolyCoder.PersonalAccounting.Grains.fsproj", "{9DA0D489-01B5-42CC-B859-27D0EB5499C5}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "PolyCoder.PersonalAccounting.Grains", "PolyCoder.PersonalAccounting.Grains\PolyCoder.PersonalAccounting.Grains.fsproj", "{9DA0D489-01B5-42CC-B859-27D0EB5499C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
