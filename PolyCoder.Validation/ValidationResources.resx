@@ -129,8 +129,8 @@
   <data name="MustBeBetween" xml:space="preserve">
     <value>must be between {0} and {1}</value>
   </data>
-  <data name="MustBeDifferentTo" xml:space="preserve">
-    <value>must be different to {0}</value>
+  <data name="MustBeDistinctTo" xml:space="preserve">
+    <value>must be distinct to {0}</value>
   </data>
   <data name="MustBeEqualsTo" xml:space="preserve">
     <value>must be equals to {0}</value>

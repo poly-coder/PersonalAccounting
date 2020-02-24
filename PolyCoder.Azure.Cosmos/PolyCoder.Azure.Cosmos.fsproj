@@ -5,12 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="ValueTypes.fs" />
-    <Compile Include="Account.fs" />
+    <Compile Include="Library.fs" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PolyCoder.Validation\PolyCoder.Validation.fsproj" />
+    <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.6.0" />
   </ItemGroup>
 
 </Project>

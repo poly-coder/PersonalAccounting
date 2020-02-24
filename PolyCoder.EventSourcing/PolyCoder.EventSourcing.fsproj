@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Types.fs" />
+    <Compile Include="EntityRequestStorage.fs" />
+    <Compile Include="EntityEventsStorage.fs" />
+    <Compile Include="EntitySnapshotStorage.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FSharp.Control.AsyncSeq" Version="2.0.23" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PolyCoder.Validation\PolyCoder.Validation.fsproj" />
+  </ItemGroup>
+
+</Project>

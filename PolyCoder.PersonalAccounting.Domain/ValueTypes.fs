@@ -5,16 +5,8 @@ open PolyCoder.Validation
 type AccountId = AccountId of string
 
 type AccountName = AccountName of string
-            
 
 [<AutoOpen>]
 module Validations =
-    let asAccountId id =
-        Validate.zero
-        |> isNotNull id
-    //    Validation.zero
-    //        |> Validation.and' 
-    //validation {
-    //    do! isNotNull id
-    //    do! hasMinLength 4 id
-    //}
+    let accountId = validate AccountId [ isNotNull; isNotBlank; hasMinLength 4; hasMaxLength 100 ]
+    let accountName = validate AccountName [ isNotNull; isNotBlank; hasMinLength 4; hasMaxLength 100 ]

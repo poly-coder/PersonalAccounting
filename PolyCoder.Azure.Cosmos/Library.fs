@@ -1,4 +1,4 @@
-﻿namespace PolyCoder.PersonalAccounting.AzureServices
+﻿namespace PolyCoder.Azure.Cosmos
 
 module Say =
     let hello name =
