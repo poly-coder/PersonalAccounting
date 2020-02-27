@@ -1,5 +1,9 @@
 ﻿namespace PolyCoder
 
+[<AutoOpen>]
+module Preamble =
+    let konst x _ = x
+
 module Seq =
     open System
     open System.Linq
@@ -9,6 +13,11 @@ module Seq =
 
     let toDictionaryKV keyFn valueFn (source: _ seq) =
         source.ToDictionary(Func<_, _> keyFn, Func<_, _> valueFn)
+
+module Option =
+    let matchWith fSome fNone = function
+    | Some x -> fSome x
+    | None -> fNone()
 
 module Map =
     let toDict map =

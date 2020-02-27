@@ -3,35 +3,30 @@
 open System
 open FSharp.Control
 
-
-
 type StoreSnapshot = {
     entityId: string
-    requestId: string
-    version: int64
+    partitionKey: string
+    snapshotId: string
     timestamp: DateTime
+    version: int64
     snapshot: obj
-    snapshotVersion: string
     metadata: Map<string, string>
+}
+
+type StoreSnapshotResult = {
+    envelope: SnapshotEnvelope
 }
 
 type ReadSnapshot = {
-    entityId: string
-    snapshotVersion: string
-    filter: EntityEventsFilter option
+    partitionKey: string
 }
 
 type ReadSnapshotResult = {
-    snapshot: obj
-    entityId: string
-    eventId: string
-    timestamp: DateTime
-    version: int64
-    metadata: Map<string, string>
+    snapshot: obj option
 }
 
 type IEntitySnapshotStorage =
-    abstract StoreSnapshot: StoreSnapshot -> Async<unit>
-    abstract ReadSnapshot: ReadSnapshot -> Async<ReadSnapshotResult option>
+    abstract StoreSnapshot: StoreSnapshot -> Async<StoreSnapshotResult>
+    abstract ReadSnapshot: ReadSnapshot -> Async<ReadSnapshotResult>
 
 

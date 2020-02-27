@@ -6,8 +6,8 @@
 
   <ItemGroup>
     <Compile Include="Types.fs" />
-    <Compile Include="EntityRequestStorage.fs" />
     <Compile Include="EntityEventsStorage.fs" />
+    <Compile Include="EntityRequestStorage.fs" />
     <Compile Include="EntitySnapshotStorage.fs" />
   </ItemGroup>
 
